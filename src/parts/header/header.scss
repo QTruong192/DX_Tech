@@ -32,14 +32,28 @@
     }
     .illutration {
       width: 37.529rem;
-      height: 32.188;
+      height: 32.188rem;
     }
     &.partner {
       padding: 4rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--grey);
+      
       .partner-logo {
         width: 7.757rem;
         height: 3rem;
         mix-blend-mode: luminosity;
+        opacity: 0.8;
+        filter: grayscale(100%);
+        transition: all 0.3s ease;
+
+        &:hover {
+          opacity: 1;
+          filter: none;
+          mix-blend-mode: normal;
+        }
       }
     }
   }
